@@ -161,6 +161,14 @@ B. Helpers
     animation-name: ts-fadeInUp;
 }
 
+.logo_img{
+    width:100px;
+}
+
+.company_logos{
+padding: 20px;
+text-align: center;
+font-size: 1.875rem;}
 /* Fade In Down */
 
 @keyframes ts-fadeInDown {

@@ -567,7 +567,6 @@ h2 {
   text-transform: uppercase;
 }
 .project-description {
-  background: #0a192f;
   padding: 1rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -604,7 +603,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #58a6ff;
+  color: #64ffda;
 }
 
 .projects-grid {
@@ -672,7 +671,6 @@ h2 {
 }
 
 .project-tech span {
-  background-color: #21262d;
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
   color: #c9d1d9;
@@ -934,6 +932,9 @@ footer {
   .experience-container {
     flex-direction: column;
   }
+  .contact-form {
+    max-width: 100%;
+  }
 
   .experience-tabs {
     display: flex;
@@ -955,10 +956,17 @@ footer {
     border-left: none;
     border-bottom: 2px solid var(--secondary);
   }
-  .experience-content .tab-content.active, .education-content .tab-content.active {
+  .experience-content .tab-content.active,
+  .education-content .tab-content.active {
     padding: 0 20px;
-}
-
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(353px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
   .projects,
   .contact {
     padding: 80px 20px;

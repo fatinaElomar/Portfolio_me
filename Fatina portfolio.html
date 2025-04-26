@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtFolio - Portfolio Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#" class="logo"><svg width="50px" height="50px" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Hexagon Path -->
+        <path d="M118.95 11.9255C119.877 11.3901 120.929 11.1083 122 11.1083C123.071 11.1083 124.123 11.3901 125.05 11.9255L215.798 64.3245C216.726 64.8602 217.496 65.6309 218.031 66.559C218.567 67.487 218.848 68.5398 218.848 69.6112V174.399C218.848 175.47 218.567 176.523 218.031 177.451C217.496 178.379 216.726 179.15 215.798 179.686L125.05 232.064C124.123 232.6 123.071 232.882 122 232.882C120.929 232.882 119.877 232.6 118.95 232.064L28.2023 179.665C27.2745 179.13 26.504 178.359 25.9686 177.431C25.4332 176.503 25.1517 175.45 25.1523 174.379V69.6112C25.1517 68.5398 25.4332 67.487 25.9686 66.559C26.504 65.6309 27.2745 64.8602 28.2023 64.3245L118.95 11.9255Z" 
+              stroke="currentColor" 
+              stroke-width="10" 
+              stroke-linecap="round" 
+              stroke-linejoin="round">
+        </path>
+        
+        <!-- Letter F -->
+        <path d="M100 84H150V94H110V120H140V130H110V160H100V84Z" 
+              fill="currentColor">
+        </path>
+      </svg></a>
+      <div class="nav-links">
+        <a href="#about"> About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Fixed Social Media -->
+    <div class="social-fixed">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.behance.net/" target="_blank">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Fixed Email -->
+    <div class="email-fixed">
+      <a href="mailto:hello@artfolio.com">fatinaelomar3@gmail.com</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h2>Hi, my name is</h2>
+      <h1>Fatina Elomar</h1>
+      <h3>I build things for the web.</h3>
+      <p>
+        I'm a software engineer specializing in building (and occasionally
+        designing) exceptional digital experiences. Currently, I'm focused on
+        building accessible, human-centered products.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="#" class="btn btn-outline">View Resume</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Md Kayesh and I enjoy creating things that live on
+          the internet. My interest in web development started back in 2020 when
+          I decided to try editing custom Tumblr themes — turns out hacking
+          together a custom reblog button taught me a lot about HTML & CSS!
+        </p>
+        <p>
+          Fast-forward to today, and I've had the privilege of working at an
+          advertising agency, a start-up, and a huge corporation. My main focus
+          these days is building accessible, inclusive products and digital
+          experiences at Upstatement for a variety of clients.
+        </p>
+        <p>Here are a few technologies I've been working with recently:</p>
+        <ul class="skills-list">
+          <li>JavaScript (ES6+)</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div class="about-image-container">
+        <!-- Replace with your image URL -->
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3MwMhx_-uLY7l0GbyuafxZLDd6igjZjMKQ&s"
+          alt="Profile Image"
+          class="about-image"
+        />
+      </div>
+    </section>
+    <div class="ex-ed" >
+<!-- Experience Section -->
+<section class="experience" id="experience">
+  <h2>Where I've Worked</h2>
+  <div class="experience-container">
+    <div class="experience-tabs">
+      <div class="experience-tab active" data-tab="terquoise">Terquoise</div>
+      <div class="experience-tab" data-tab="devancy">Devancy</div>
+      <div class="experience-tab" data-tab="tnlmedia">TNL Media</div>
+      <div class="experience-tab" data-tab="brandify">Brandify</div>
+      <div class="experience-tab" data-tab="eluxmedia">ELUX MEDIA</div>
+      <div class="experience-tab" data-tab="codi">Codi</div>
+      <div class="experience-tab" data-tab="mercycorps">Mercy Corps</div>
+      <div class="experience-tab" data-tab="icet">ICET</div>
+    </div>
+    <div class="experience-content">
+      <div class="tab-content active" id="terquoise">
+        <h3>Web Developer</h3>
+        <h4>Terquoise, KSA</h4>
+        <p>2024 - Present</p>
+        <ul>
+          <li>Customized Shopify and WordPress websites ensuring mobile responsiveness.</li>
+          <li>Connected APIs and managed eCommerce functionality enhancements.</li>
+          <li>Focused on improving site loading speed and search engine rankings.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="devancy">
+        <h3>Web Developer</h3>
+        <h4>Devancy, France</h4>
+        <p>2024 - Present</p>
+        <ul>
+          <li>Customized Shopify themes and WordPress plugins for responsive and optimized websites.</li>
+          <li>Integrated third-party APIs and payment solutions for seamless transactions.</li>
+          <li>Boosted site performance and SEO through technical optimization strategies.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="tnlmedia">
+        <h3>Full Stack Web Developer</h3>
+        <h4>TNL Media, Miniara, North Lebanon</h4>
+        <p>2024 - 2025</p>
+        <ul>
+          <li>Backend development using Node.js, Express, PHP, Laravel, and SQL databases.</li>
+          <li>Frontend development using JavaScript, React, and Bootstrap frameworks.</li>
+          <li>Server administration on LAMP stack environments.</li>
+          <li>Implemented AGILE methodologies in project management workflows.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="brandify">
+        <h3>Frontend Developer</h3>
+        <h4>Brandify, Kuwait</h4>
+        <p>2023 - 2024</p>
+        <ul>
+          <li>Designed assets using Adobe Suite, Figma, and React.</li>
+          <li>Customized Shopify themes and WordPress plugins for responsive websites.</li>
+          <li>Integrated APIs and payment gateways to enhance eCommerce experiences.</li>
+          <li>Optimized website speed, SEO, and UX using Liquid, PHP, and JavaScript.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="eluxmedia">
+        <h3>Graphic Designer</h3>
+        <h4>ELUX MEDIA, Akkar, Hekker</h4>
+        <p>June 2023 - November 2023</p>
+        <ul>
+          <li>Created digital and print designs using Adobe Creative Suite focusing on typography and color theory.</li>
+          <li>Delivered work on tight deadlines within collaborative team environments.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="codi">
+        <h3>Full Stack Development Program</h3>
+        <h4>Codi, Tripoli, Mina</h4>
+        <p>2022 - 2023</p>
+        <ul>
+          <li>Learned and applied full-stack development including Node.js, PHP, Laravel, SQL, JavaScript, and React.</li>
+          <li>Built and deployed full web applications using modern technologies.</li>
+          <li>Gained experience in WordPress CMS and project collaboration.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="mercycorps">
+        <h3>Graphic Designer</h3>
+        <h4>Mercy Corps</h4>
+        <p>2020 - 2022</p>
+        <ul>
+          <li>Logo design, brand identity creation, and web design.</li>
+          <li>Produced high-quality visual assets for campaigns and marketing materials.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="icet">
+        <h3>Administrative Work</h3>
+        <h4>International Center for Education and Training, Tripoli</h4>
+        <p>2016 - 2018</p>
+        <ul>
+          <li>Organized files efficiently for administrative purposes.</li>
+          <li>Managed document dispatch via email, scanner, and printer operations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="education experience-tabs" id="education">
+  <h2>Education</h2>
+  <div class="education-container">
+    <div class="education-tabs">
+      <div class="education-tab active" data-tab="fullstack1">Full Stack Developer </div>
+      <div class="education-tab" data-tab="fullstack2">Full Stack Developer </div>
+      <div class="education-tab" data-tab="businessenglish">Business English</div>
+      <div class="education-tab" data-tab="freecodecamp">FreeCodeCamp Certificate</div>
+      <div class="education-tab" data-tab="technicallicense">Technical License</div>
+      <div class="education-tab" data-tab="automation">Automation Course</div>
+      <div class="education-tab" data-tab="superiortech">Superior Technician</div>
+    </div>
+    <div class="education-content">
+      <div class="tab-content active" id="fullstack1">
+        <h3>Full Stack Web Developer</h3>
+        <h4>Coding for the Whole Hero</h4>
+        <p>2023 - 2024</p>
+        <ul>
+          <li>Built dynamic websites using Webflow and Firebase integration.</li>
+          <li>Developed booking and user account systems with Firebase Auth & Firestore.</li>
+          <li>Managed real-time data, file storage, and automated messaging.</li>
+          <li>Designed responsive, user-friendly interfaces in Webflow.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="fullstack2">
+        <h3>Full Stack Web Developer</h3>
+        <h4>Coding for the Whole Hero</h4>
+        <p>2019 - 2022</p>
+        <ul>
+          <li>Built dynamic websites using Webflow and Firebase integration.</li>
+          <li>Developed booking and user account systems with Firebase Auth & Firestore.</li>
+          <li>Managed real-time data, file storage, and automated messaging.</li>
+          <li>Designed responsive, user-friendly interfaces in Webflow.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="businessenglish">
+        <h3>Business English Course</h3>
+        <h4>International Rescue Committee</h4>
+        <p>2022 - 2023</p>
+        <ul>
+          <li>Job Interviews, Job Performance, Business Meetings, Marketing Meetings.</li>
+          <li>Customer Surveys, and professional phone calls in English.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="freecodecamp">
+        <h3>FreeCodeCamp Web Development Certificate</h3>
+        <h4>FreeCodeCamp</h4>
+        <p>2021 - 2022</p>
+        <ul>
+          <li>Topics: HTML, CSS, CSS Flexbox, CSS Grid, Web Accessibility, and more.</li>
+          <li>Projects: Completed hands-on projects to apply technical skills.</li>
+          <li>Practical Skills: Built web designs that adapt to various screen sizes.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="technicallicense">
+        <h3>Technical License in Computer Science (LT)</h3>
+        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <p>2019</p>
+      </div>
+      <div class="tab-content" id="automation">
+        <h3>Automation & Artificial Intelligence Course</h3>
+        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <p>2019</p>
+      </div>
+      <div class="tab-content" id="superiortech">
+        <h3>Superior Technician in Information Systems (TS2)</h3>
+        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <p>2018</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+   <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <span>Some Things</span>
+    <h2>I've Built</h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="your-image-path/pixy.png" alt="Pixy App Screenshot">
+      <div class="project-header">Pixy (mobile app)</div>
+
+      <div class="project-tags">
+        <span class="tag">Featured Project</span>
+      </div>
+
+      <p class="project-description">
+        Pixy is an image wallpaper mobile app. Users can search, download, and save their useful images from Pixabay API. I used React Native and Expo to build this app.
+      </p>
+
+      <div class="project-tech">
+        <span class="tech-item">React Native</span>
+        <span class="tech-item">Expo</span>
+        <span class="tech-item">Nativewind</span>
+        <span class="tech-item">TypeScript</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="your-image-path/dusk.png" alt="Dusk Portfolio Screenshot">
+      <div class="project-header">Dusk Portfolio Template</div>
+
+      <div class="project-tags">
+        <span class="tag">Featured Project</span>
+      </div>
+
+      <p class="project-description">
+        Dusk - React Portfolio template is a single page personal CV template built with the latest frameworks like React, Tailwind CSS and GSAP for animations.
+      </p>
+
+      <div class="project-tech">
+        <span class="tech-item">React</span>
+        <span class="tech-item">TypeScript</span>
+        <span class="tech-item">Tailwind</span>
+        <span class="tech-item">GSAP</span>
+      </div>
+    </div>
+
+  </section>
+
+  
+<!-- Add this to your <head> for FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <section>
+    <h2 class="section-title">Other Noteworthy Projects</h2>
+  
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fa-solid fa-folder folder-icon"></i>
+          <div class="card-links">
+            <a href="#"><i class="fab fa-github icon"></i></a>
+            <a href="#"><i class="fas fa-arrow-up-right-from-square icon"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Google Keep Clone</h3>
+        <p class="project-description">
+          A simple note-taking app built with Next.js, Firebase, and Tailwind CSS.
+        </p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>JavaScript</span>
+          <span>Firebase</span>
+          <span>Tailwind</span>
+          <span>Redux</span>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fa-solid fa-folder folder-icon"></i>
+          <div class="card-links">
+            <a href="#"><i class="fab fa-github icon"></i></a>
+            <a href="#"><i class="fas fa-arrow-up-right-from-square icon"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Personal Portfolio v2</h3>
+        <p class="project-description">
+          My personal website built with Next.js, Tailwind CSS, and deployed on Vercel.
+        </p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+          <span>Firebase</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fa-solid fa-folder folder-icon"></i>
+          <div class="card-links">
+            <a href="#"><i class="fab fa-github icon"></i></a>
+            <a href="#"><i class="fas fa-arrow-up-right-from-square icon"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Travel Guide App</h3>
+        <p class="project-description">
+          A travel suggestion app to pick destinations, built with modern technologies.
+        </p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Express</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h1>Let's Work<br>Together</h1>
+      <h2>Get In Touch With Me</h2>
+      <p>
+        I’m interested in freelance opportunities – especially ambitious or large projects. 
+        However, if you have other requests or questions, don’t hesitate to use the form.
+      </p>
+    </div>
+  
+    
+    <div class="contact-form" method="POST">
+      <form action="send-email.php">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <input type="email" id="email" name="email" placeholder="Enter email address" required />
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+        <textarea id="message" name="message" placeholder="Write me a message" required></textarea>
+        
+        <button type="submit" class="send-button">Send</button>
+      </form>
+
+      <div class="or-divider">
+        <span></span>
+        <p>Or</p>
+        <span></span>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-codepen"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 ArtFolio. All rights reserved</p>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+
+        mobileMenuBtn.addEventListener("click", () => {
+          navLinks.style.display =
+            navLinks.style.display === "flex" ? "none" : "flex";
+        });
+
+        // Experience Tab Switching
+const experienceTabs = document.querySelectorAll(".experience-tab");
+const experienceContents = document.querySelectorAll(".experience-content .tab-content");
+
+experienceTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    experienceTabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    experienceContents.forEach((c) => c.classList.remove("active"));
+
+    const tabId = tab.getAttribute("data-tab");
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) activeContent.classList.add("active");
+  });
+});
+
+// Education Tab Switching
+const educationTabs = document.querySelectorAll(".education-tab");
+const educationContents = document.querySelectorAll(".education-content .tab-content");
+
+educationTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    educationTabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    educationContents.forEach((c) => c.classList.remove("active"));
+
+    const tabId = tab.getAttribute("data-tab");
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) activeContent.classList.add("active");
+  });
+});
+
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (navLinks.style.display === "flex") {
+              navLinks.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

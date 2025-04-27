@@ -403,7 +403,9 @@ ul.custom-list li svg {
 
 
 /* Projects Section */
-
+.project-info {
+  padding-left: 43px;
+}
 .projects-grid {
   display: flex;
   align-items: center;
@@ -436,7 +438,7 @@ ul.custom-list li svg {
 }
 .project {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   background: #112240;
   border-radius: 10px;
   padding: 2rem;

@@ -53,25 +53,22 @@
     <div class="email-fixed">
       <a href="mailto:hello@artfolio.com">fatinaelomar3@gmail.com</a>
     </div>
-
+<main class="main-content">
     <!-- Hero Section -->
     <section class="hero" id="home">
       <h2>Hi, my name is</h2>
-      <h1>Fatina Elomar</h1>
-      <h3>I build things for the web.</h3>
-      <p>
-        I'm a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I'm focused on
-        building accessible, human-centered products.
-      </p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-        <a href="#" class="btn btn-outline">View Resume</a>
+      <h1 class="text-name" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">Fatina Elomar</h1>
+      <h2 class="text-slogan" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">I Love to build things for the web.</h2>
+      <p class="text-des" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
+        I love to Develop user interfaces and web applications with latest technologies. Transforming ideas into reality through code.</p>
+      <div class="hero-buttons" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+        <a class="btn btn-primary" type="button">Check out my portfolio</a>
+        <a href="/resume/resume.pdf" class="btn btn-outlin">Resume</a>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="container about" id="about">
       <div class="about-content">
         <h2>About Me</h2>
         <p>
@@ -99,7 +96,7 @@
       <div class="about-image-container">
         <!-- Replace with your image URL -->
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3MwMhx_-uLY7l0GbyuafxZLDd6igjZjMKQ&s"
+          src="assets/images/hero1.png"
           alt="Profile Image"
           class="about-image"
         />
@@ -107,8 +104,9 @@
     </section>
     <div class="ex-ed" >
 <!-- Experience Section -->
+  
 <section class="experience" id="experience">
-  <h2>Where I've Worked</h2>
+  <h2 class="ex-title">Where I've Worked</h2>
   <div class="experience-container">
     <div class="experience-tabs">
       <div class="experience-tab active" data-tab="terquoise">Terquoise</div>
@@ -206,14 +204,13 @@
 
 <!-- Education Section -->
 <section class="education experience-tabs" id="education">
-  <h2>Education</h2>
+  <h2 class="ex-title">Education</h2>
   <div class="education-container">
     <div class="education-tabs">
       <div class="education-tab active" data-tab="fullstack1">Full Stack Developer </div>
-      <div class="education-tab" data-tab="fullstack2">Full Stack Developer </div>
       <div class="education-tab" data-tab="businessenglish">Business English</div>
-      <div class="education-tab" data-tab="freecodecamp">FreeCodeCamp Certificate</div>
-      <div class="education-tab" data-tab="technicallicense">Technical License</div>
+      <div class="education-tab" data-tab="freecodecamp">FreeCodeCamp</div>
+      <div class="education-tab" data-tab="technicallicense">Bachelor's Degree</div>
       <div class="education-tab" data-tab="automation">Automation Course</div>
       <div class="education-tab" data-tab="superiortech">Superior Technician</div>
     </div>
@@ -229,17 +226,7 @@
           <li>Designed responsive, user-friendly interfaces in Webflow.</li>
         </ul>
       </div>
-      <div class="tab-content" id="fullstack2">
-        <h3>Full Stack Web Developer</h3>
-        <h4>Coding for the Whole Hero</h4>
-        <p>2019 - 2022</p>
-        <ul>
-          <li>Built dynamic websites using Webflow and Firebase integration.</li>
-          <li>Developed booking and user account systems with Firebase Auth & Firestore.</li>
-          <li>Managed real-time data, file storage, and automated messaging.</li>
-          <li>Designed responsive, user-friendly interfaces in Webflow.</li>
-        </ul>
-      </div>
+      
       <div class="tab-content" id="businessenglish">
         <h3>Business English Course</h3>
         <h4>International Rescue Committee</h4>
@@ -260,18 +247,18 @@
         </ul>
       </div>
       <div class="tab-content" id="technicallicense">
-        <h3>Technical License in Computer Science (LT)</h3>
-        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <h3>Bachelor's Degree in Computer Science(LT)</h3>
+        <h4>Halba Technical Institute, Lebanon / Halba</h4>
         <p>2019</p>
       </div>
       <div class="tab-content" id="automation">
         <h3>Automation & Artificial Intelligence Course</h3>
-        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <h4>Halba Technical Institute, Lebanon / Halba</h4>
         <p>2019</p>
       </div>
       <div class="tab-content" id="superiortech">
         <h3>Superior Technician in Information Systems (TS2)</h3>
-        <h4>Halba Technical Institute, Akkar / Halba</h4>
+        <h4>Halba Technical Institute, Lebanon / Halba</h4>
         <p>2018</p>
       </div>
     </div>
@@ -283,9 +270,14 @@
 
    <!-- Projects Section -->
   <section class="projects" id="projects">
+    <div>
+      <h1>My Work</h1>
+      <p>Here are a few projects I've worked on recently.</p>
+    </div>
+      <div class="projects-header">
     <span>Some Things</span>
     <h2>I've Built</h2>
-
+  </div>
     <!-- Project 1 -->
     <div class="project">
       <img src="your-image-path/pixy.png" alt="Pixy App Screenshot">
@@ -439,11 +431,11 @@
     </div>
   </div>
 </section>
-
+</main>
 
     <!-- Footer -->
     <footer>
-      <p>© 2024 ArtFolio. All rights reserved</p>
+      <p>© 2025 fatinaelomar. All rights reserved</p>
     </footer>
 
     <script>

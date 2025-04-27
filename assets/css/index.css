@@ -20,14 +20,12 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-.ex-ed {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 50px;
+
+  .ex-ed {
+    position: relative;
+    left: 21%;
 }
+
 
 /* Navigation */
 nav {
@@ -83,26 +81,48 @@ a {
   font-size: 24px;
   cursor: pointer;
 }
+.main-content{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: 100%;
+  width:100%
+
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+}
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  max-width: 1000px;
   flex-direction: column;
   justify-content: center;
-  padding: 0 50px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 7rem;
+  width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
 }
 
-.hero h2 {
+.hero .text-slogan {
   color: var(--secondary);
-  font-size: 18px;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 600;
   margin-bottom: 20px;
+  margin-top: .75rem;
 }
 
-.hero h1 {
-  font-size: 80px;
+.hero .text-name {
+  font-size: 4.5rem;
+  line-height: 1;
   font-weight: 700;
   margin-bottom: 10px;
   color: var(--light);
@@ -115,10 +135,11 @@ a {
   color: var(--gray);
 }
 
-.hero p {
-  max-width: 600px;
+.hero .text-des {
+  max-width:45rem;
   color: var(--gray);
-  margin-bottom: 30px;
+  margin-top: 1.5rem;
+  margin: 1rem 0 2.2rem 0;
 }
 
 .hero-buttons {
@@ -127,11 +148,18 @@ a {
 }
 
 .btn {
-  padding: 15px 30px;
+  padding: .5rem 1rem;
+  border: 1px solid #64ffda;
   border-radius: 5px;
-  font-size: 16px;
-  text-decoration: none;
-  transition: all 0.3s;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #64ffda;
+  transition: all 1s;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #64ffda;
 }
 
 .btn-primary {
@@ -281,218 +309,99 @@ a {
 
 /* Experience Section */
 
-/* Section Layout */
-section {
-  padding: 40px;
+ul{
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
 }
 
-h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: var(--light);
-  text-align: left;
+ul.custom-list li {
+  position: relative;
+  padding-left: 24px; /* Space for the SVG */
 }
 
-/* Experience and Education Containers */
-.experience-container,
-.education-container {
+ul.custom-list li svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.experience-container {
   display: flex;
-  gap: 5px;
+  gap: 2rem;
 }
 
-/* Experience Tabs */
-.experience-tabs,
-.education-tabs {
+.experience-tabs {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--gray);
+  min-width: 200px; /* Keep tabs width fixed */
+  border-left: 2px solid #2d2d2d;
 }
 
-.experience-tab,
-.education-tab {
-  padding: 15px 30px;
+.experience-tab {
+  padding: 1rem;
   cursor: pointer;
-  transition: all 0.3s;
+  color: #ccc;
+  transition: background 0.3s, color 0.3s;
   border-left: 2px solid transparent;
-  color: var(--gray);
-  white-space: nowrap;
 }
 
-.experience-tab:hover,
-.education-tab:hover {
-  background-color: rgba(100, 255, 218, 0.1);
-  color: var(--secondary);
+.experience-tab.active {
+  color: #00f7c1; /* Highlight color like image */
+  background-color: rgba(0, 247, 193, 0.1); /* Light background for active */
+  border-left: 2px solid #00f7c1;
 }
 
-.experience-tab.active,
-.education-tab.active {
-  border-left: 2px solid var(--secondary);
-  color: var(--secondary);
-  background-color: rgba(100, 255, 218, 0.1);
-}
-
-/* Experience Content */
-.experience-content,
-.education-content {
+.experience-content {
   flex: 1;
 }
 
-.experience-content .tab-content,
-.education-content .tab-content {
+.tab-content {
   display: none;
 }
 
-.experience-content .tab-content.active,
-.education-content .tab-content.active {
+.tab-content.active {
   display: block;
-  animation: fadeIn 0.5s ease;
 }
 
-/* Content Layout */
-.experience-content h3,
-.education-content h3 {
-  font-size: 24px;
-  color: var(--light);
+/* Education Section Same Style */
+.education-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
-.experience-content h4,
-.education-content h4 {
-  font-size: 20px;
-  color: var(--secondary);
+.education-tabs {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  border-left: 2px solid #2d2d2d;
 }
 
-.experience-content p,
-.education-content p {
-  font-size: 16px;
-  color: var(--light);
+.education-tab {
+  padding: 1rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: background 0.3s, color 0.3s;
+  border-left: 2px solid transparent;
 }
 
-.experience-content ul,
-.education-content ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.education-tab.active {
+  color: #00f7c1;
+  background-color: rgba(0, 247, 193, 0.1);
+  border-left: 2px solid #00f7c1;
 }
 
-.experience-content ul li,
-.education-content ul li {
-  font-size: 16px;
-  color: var(--light);
+.education-content {
+  flex: 1;
+}
+.ex-title{
+    font-size: 3rem;
+    padding: 38px 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .experience-container,
-  .education-container {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .experience-tabs,
-  .education-tabs {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .experience-content,
-  .education-content {
-    width: 100%;
-  }
-}
-
-/* Animation for Fading Content */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.experience-content h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: var(--light);
-}
-
-.experience-content h4 {
-  font-size: 16px;
-  color: var(--secondary);
-  margin-bottom: 20px;
-}
-
-.experience-content p {
-  color: var(--gray);
-  margin-bottom: 20px;
-}
-
-.experience-content ul {
-  list-style: none;
-}
-
-.experience-content li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
-  color: var(--gray);
-}
-
-.experience-content li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--secondary);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .experience-container,
-  .education-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .experience-tabs,
-  .education-tabs {
-    flex-direction: row;
-    border-left: none;
-    border-bottom: 1px solid var(--gray);
-    width: 100%;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
-
-  .experience-tab,
-  .education-tab {
-    border-left: none;
-    border-bottom: 2px solid transparent;
-    white-space: nowrap;
-    padding: 10px 20px;
-  }
-
-  .experience-tab.active,
-  .education-tab.active {
-    border-bottom: 2px solid var(--secondary);
-    border-left: none;
-  }
-
-  .experience-content,
-  .education-content {
-    width: 100%;
-  }
-}
 /* Projects Section */
 
 .projects-grid {
@@ -503,10 +412,17 @@ h2 {
   margin: 0 auto;
   padding: 100px 50px;
 }
-
+.projects-header{
+  text-align: left;
+}
 .projects {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex ;
+  flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 50px;
 }
 .projects span {
   color: #8892b0;
@@ -573,11 +489,15 @@ h2 {
   margin-bottom: 1rem;
   color: #8892b0;
 }
-.project-tech {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+
+  .project-tech {
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 0;
+    font-size: 12px;
 }
+
 .tech-item {
   color: #ccd6f6;
   font-size: 0.9rem;
@@ -663,12 +583,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-}
+
 
 .project-tech span {
   padding: 0.3rem 0.6rem;
@@ -889,10 +804,23 @@ footer {
   }
 
   .ex-ed {
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
+    left: 0%;
   }
+  .main-content {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+
+}
+.education-container {
+  display: flex;
+  gap: 2rem;
+margin-top: 1rem; 
+  flex-direction: column;
+}
+.education-tabs {
+  flex-direction: row;
+}
+
 
   .experience-tabs,
   .education-tabs {
@@ -971,4 +899,5 @@ footer {
   .contact {
     padding: 80px 20px;
   }
+
 }

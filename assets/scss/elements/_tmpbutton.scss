@@ -676,10 +676,10 @@
         }
 
         &.radius-round {
-            border-radius: 500px;
+            border-radius:0;
 
             &::before {
-                border-radius: 500px;
+                border-radius:0;
             }
         }
     }
@@ -694,7 +694,7 @@
 }
 
 .radius-round {
-    border-radius: 500px !important;
+    border-radius: 0;
 }
 
 

@@ -45,7 +45,7 @@ ul,
 table,
 hr {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom:5px;
 }
 
 h1,
@@ -386,8 +386,8 @@ ul {
     li {
         font-size: var(--font-size-b1);
         line-height: var(--line-height-b1);
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0!important;
+        margin-bottom: 0!important;
         color: var(--color-body);
 
         a {
@@ -412,8 +412,8 @@ ol {
         font-size: var(--font-size-b1);
         line-height: var(--line-height-b1);
         color: var(--color-body);
-        margin-top: 10px;
-        margin-bottom: 10px;
+       margin-top: 0;
+        margin-bottom:0;
 
         a {
             color: var(--color-heading);

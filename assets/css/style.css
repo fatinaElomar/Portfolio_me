@@ -162,8 +162,8 @@
   --line-height-b2: 1.6;
   --line-height-b3: 1.7;
   --h1: 60px;
-  --h2: 36px;
-  --h3: 27px;
+  --h2: 22px;
+  --h3: 17px;
   --h4: 24px;
   --h5: 20px;
   --h6: 18px;
@@ -28755,7 +28755,7 @@ body.white-version .card-greeting p {
   -webkit-mask-composite: xor;
   mask: var(--full) padding-box exclude, var(--full);
   pointer-events: none;
-  background: linear-gradient(127deg, #7ee1fa 0%, rgba(126, 225, 250, 0) 15.02%, rgba(126, 225, 250, 0) 100%) border-box, linear-gradient(-53deg, #7ee1fa 0%, rgba(126, 225, 250, 0) 15.02%, rgba(126, 225, 250, 0) 100%) border-box;
+  background: linear-gradient(127deg, #c786de94 0%, rgba(126, 225, 250, 0) 15.02%, rgba(126, 225, 250, 0) 100%) border-box, linear-gradient(-53deg, #c786de94 0%, rgba(126, 225, 250, 0) 15.02%, rgba(126, 225, 250, 0) 100%) border-box;
   z-index: 1;
 }
 .for-animation-inner .cta__line-wrap-1 {
@@ -29609,7 +29609,7 @@ body.color-primary-4th {
 }
 body.tmp-white-version {
   background-color: #ECF0F3;
-  --color-heading: #141414;
+  --color-heading: #d7d7d7;
   --color-gray: #5d6570;
   --color-body: #2a2d31;
   --color-gray-2: linear-gradient(145deg, #e2e8ec, #ffffff);

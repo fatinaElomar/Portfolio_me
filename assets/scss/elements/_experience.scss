@@ -1,5 +1,4 @@
-
-.experience-style-list{
+.experience-style-list {
     .experience-list {
 
         @media #{$sm-layout} {
@@ -14,9 +13,9 @@
         .resume-single-list {
             position: relative;
             z-index: 2;
-            // margin-top: 50px;
+
             padding: 45px 40px;
-            border-radius: 6px;
+
             background: var(--color-card);
             transition: var(--transition);
 
@@ -90,7 +89,7 @@
                             padding: 0 15px;
                             height: 36px;
                             line-height: 36px;
-                            border-radius: 6px;
+                            
                             background: #1e2025;
                             transition: var(--transition);
                             font-weight: 500;
@@ -148,22 +147,27 @@
         }
     }
 }
-.bg-card{
+
+.bg-card {
     background: var(--color-card);
 }
 
-.personal-portfolio-right-inner-wrapper{
+.personal-portfolio-right-inner-wrapper {
     max-width: 80%;
     margin-right: auto;
+
     @media #{$laptop-device} {
         max-width: 90%;
     }
+
     @media #{$smlg-device} {
         max-width: 100%;
     }
+
     @media #{$md-layout} {
         max-width: 100%;
     }
+
     @media #{$sm-layout} {
         max-width: 100%;
     }

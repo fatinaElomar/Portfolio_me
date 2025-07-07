@@ -155,9 +155,9 @@
   --border-width: 1px;
   --radius:0;
   --transition: all 0.4s ease-in-out;
-  --font-size-b1: 16px;
-  --font-size-b2: 18px;
-  --font-size-b3: 22px;
+  --font-size-b1: 14px;
+  --font-size-b2: 16px;
+  --font-size-b3: 20px;
   --line-height-b1: 1.75;
   --line-height-b2: 1.6;
   --line-height-b3: 1.7;
@@ -16137,8 +16137,16 @@ Section Head
 }
 @media (min-width: 1400px) {
   .img-box.v2 {
-    height: 447px;
+    height: 243px;
   }
+}
+.projects-1 {
+    width: 33%;
+}
+@media (max-width: 768px) {
+    .projects-1 {
+        width: 100%;
+    }
 }
 .img-box .img-primary {
   position: absolute;
@@ -16370,7 +16378,7 @@ Section Head
   margin-bottom: 30px;
   color: var(--color-heading);
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
@@ -25633,7 +25641,7 @@ Primary style
   z-index: 2;
   margin-top: 50px;
   padding: 45px 40px;
-  border-radius: 6px;
+  
   background: var(--color-card);
   transition: var(--transition);
 }
@@ -28729,7 +28737,7 @@ body.white-version .card-greeting p {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 15px;
+  border-radius:0;
   flex-flow: column;
   justify-content: center;
   align-items: center;

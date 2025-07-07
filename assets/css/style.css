@@ -75,7 +75,7 @@
 }
 
 :root {
-  --color-page: #010A10;
+  --color-page: #0a0b0c;
   --color-primary: #c786de;
   --color-primary-alt: #BBADFF;
   --color-primary-2nd: #DAB6FC;
@@ -100,7 +100,7 @@
   --gradient-three: linear-gradient(to right, #03041c, #a706b3);
  --text-gradient-one: linear-gradient(to right, #d8b4fe, #a855f7);
   --stroke-gr: linear-gradient(317deg, #e0bbff 0%, rgba(192, 132, 252, 0.2) 38.23%, rgba(168, 85, 247, 0.2) 62.96%, #c084fc 100%);
-  --stroke-gradient-2: radial-gradient(92.46% 222.14% at 15.65% -7.58%, rgba(127, 226, 251, 0.20) 0%, rgba(127, 226, 251, 0.02) 100%);
+  --stroke-gradient-2: radial-gradient(92.46% 222.14% at 15.65% -7.58%, #c786de 0%, rgba(127, 226, 251, 0.02) 100%);
  --icon-gradient: linear-gradient(315deg, #d8b4fe 0%, #a855f7 100%);
   --gradient-none: linear-gradient(red 0 0);
   --full: linear-gradient(red 0 0);
@@ -117,7 +117,7 @@
   --color-light: #E4E6EA;
   --color-lighter: #CED0D4;
   --color-lightest: #F0F2F5;
-  --color-border: #4c3f5e7a;
+  --color-border: #ffffff52;
   --color-border-2: #ffffff80;
   --color-border-3: #ffffff0f;
   --color-white: #ffffff;
@@ -29469,9 +29469,10 @@ div#featured-project-carousel {
 }
 
 .footer-style-4 .description {
-  font-size: 17px;
+  font-size: 14px;
   color: var(--color-body);
-  font-family: var(--font-secondary);
+  letter-spacing: 2px;
+  font-family: var(--font-primary);
 }
 
 .tmp-footer-area-style-net .footer-style-3 .tmp-call-to-action.style-8 {

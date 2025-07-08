@@ -973,7 +973,7 @@ blockquote b {
 }
 
 .tmp-section-gapTop {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tmp-section-gapTop {
@@ -7587,6 +7587,23 @@ p.description {
   -webkit-transition-delay: 0.3s;
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+
+
+
+.services-11 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+     flex-direction: row;
+}
+@media (max-width: 768px) {
+  .services-11 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 /*!
@@ -22020,7 +22037,7 @@ body.loaded {
   transition: var(--transition);
 }
 .latest-portfolio-card .portfoli-card-img img {
-  border-radius: 20px;
+ 
   width: 100%;
   object-fit: cover;
   transition: var(--transition);
@@ -23062,7 +23079,7 @@ body.loaded {
 .service-card-v2 {
   
   background: var(--color-gray-2);
-  padding: 36px 40px 36px 40px;
+  padding:26px;
   margin-bottom: 20px;
   display: block;
   position: relative;
